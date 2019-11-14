@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33d68365-cebc-4c33-8fb4-d5e35feee5c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Expense Tracker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Expense-Tracker-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshot at Nov 13 02-13-21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Account.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/BankAccount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Card.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Cash.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Categories.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Container.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Controller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Expense.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/GlobalState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Income.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Iterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/META-INF/Expense-Tracker-master.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Observer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Stock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/Transaction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Expense-Tracker-master/TranslateIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Categories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Expense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GlobalState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Income.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TranslateIterator.java" afterDir="false" />
-    </list>
+    <list default="true" id="33d68365-cebc-4c33-8fb4-d5e35feee5c8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-280" />
     <option name="y" value="498" />
     <option name="width" value="1377" />
