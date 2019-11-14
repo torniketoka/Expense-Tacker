@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class Controller implements Container{
+public class Controller implements Container, Subject {
     private double totalBalance;
     private List<Transaction> transactionList = new ArrayList <>();
     private List<Account> accountList = new ArrayList <>();
+
+    //Observer pattern
+    private List<Observer> observers = new ArrayList <Observer>();
 
     public double getTotalBalance() {
         return totalBalance;
@@ -42,8 +45,9 @@ public class Controller implements Container{
 
 
     public void createAccount() {
-        Account account = new Cash("Hakob", 100, 111);
+        Account account = new Card("Hakob", 100, 111);
         sendAccountToList(account);
+        registerObserver(account);
     }
 
     public void sendAccountToList(Account account) {
@@ -51,12 +55,13 @@ public class Controller implements Container{
     }
 
     public void createTransaction() {
-        Transaction transaction1 = new Expense(111, Calendar.getInstance().getTime(), 100, "Shoes");
-        sendTransactionToList(transaction1);
+        Transaction transaction2 = new Expense(111, Calendar.getInstance().getTime(), 10, "Sarochka");
+        sendTransactionToList(transaction2);
     }
 
     public void sendTransactionToList(Transaction transaction) {
         appendToTransactionList(transaction);
+        notifyObservers();
     }
 
 
@@ -73,9 +78,28 @@ public class Controller implements Container{
         sendTransactionToList(transaction4);
     }
 
-
+    //Iterator pattern
     @Override
     public Iterator getIterator() {
         return new TransactionIterator(this);
     }
+
+    //Observer pattern
+    @Override
+    public void registerObserver(Observer o) {
+        observers.add(o);
+    }
+
+    @Override
+    public void removeObserver(Observer o) {
+        observers.remove(o);
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (Observer observer : observers) {
+            observer.update(transactionList.get(transactionList.size()-1));
+        }
+    }
+
 }

@@ -1,6 +1,3 @@
-
-
-
 public class TransactionIterator implements Iterator {
 
 

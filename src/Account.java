@@ -1,4 +1,4 @@
-public abstract class Account {
+public abstract class Account implements Observer {
     private String owner;
     private double balance;
     private int id;

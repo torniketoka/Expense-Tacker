@@ -19,8 +19,6 @@ public class Transaction{
         childTransactions = new ArrayList<Transaction>();
     }
 
-    public Transaction(){}
-
     public int getAccountID() {
         return accountID;
     }

@@ -1,5 +1,3 @@
-public abstract class Observer {
-    protected Controller controller;
-
-    public abstract void update();
+public interface Observer {
+    public void update(Transaction transaction);
 }
