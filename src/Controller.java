@@ -2,29 +2,52 @@
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
-public class Controller {
-    private GlobalState globalState;
+public class Controller implements Container{
+    private double totalBalance;
+    private List<Transaction> transactionList = new ArrayList <>();
+    private List<Account> accountList = new ArrayList <>();
 
-    public Controller() {
-        this.globalState = new GlobalState();
+    public double getTotalBalance() {
+        return totalBalance;
     }
 
-    public GlobalState getGlobalState() {
-        return globalState;
+    public void setTotalBalance(double totalBalance) {
+        this.totalBalance = totalBalance;
     }
 
-    public void setGlobalState(GlobalState globalState) {
-        this.globalState = globalState;
+    public List <Transaction> getTransactionList() {
+        return transactionList;
     }
+
+    public void setTransactionList(List <Transaction> transactionList) {
+        this.transactionList = transactionList;
+    }
+
+    public List <Account> getAccountList() {
+        return accountList;
+    }
+
+    public void setAccountList(List <Account> accountList) {
+        this.accountList = accountList;
+    }
+
+    public void appendToTransactionList(Transaction transaction) {
+        transactionList.add(transaction);
+    }
+    public void appendToAccountList(Account account) {
+        accountList.add(account);
+    }
+
 
     public void createAccount() {
         Account account = new Cash("Hakob", 100, 111);
         sendAccountToList(account);
     }
-//sendAccountToList и sendTransactionToList strategy pattern можно сделать
+
     public void sendAccountToList(Account account) {
-        globalState.appendToAccountList(account);
+        appendToAccountList(account);
     }
 
     public void createTransaction() {
@@ -33,7 +56,7 @@ public class Controller {
     }
 
     public void sendTransactionToList(Transaction transaction) {
-        globalState.appendToTransactionList(transaction);
+        appendToTransactionList(transaction);
     }
 
 
@@ -51,4 +74,8 @@ public class Controller {
     }
 
 
+    @Override
+    public Iterator getIterator() {
+        return new TransactionIterator(this);
+    }
 }

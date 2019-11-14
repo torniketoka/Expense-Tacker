@@ -1,5 +1,5 @@
 public abstract class Observer {
-    protected GlobalState globalState;
+    protected Controller controller;
 
     public abstract void update();
 }
